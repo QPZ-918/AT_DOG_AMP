@@ -1,0 +1,41 @@
+# ATDog2 quadruped retarget configuration
+# Joint order matches GO2 SDK order: FR, FL, RR, RL
+
+# GMR (MuJoCo) DOF names and order
+gmr_dof_names:
+  - FL_hip_joint
+  - FL_thigh_joint
+  - FL_calf_joint
+  - FR_hip_joint
+  - FR_thigh_joint
+  - FR_calf_joint
+  - RL_hip_joint
+  - RL_thigh_joint
+  - RL_calf_joint
+  - RR_hip_joint
+  - RR_thigh_joint
+  - RR_calf_joint
+
+# Legged Lab (Isaac Lab) DOF names and order
+lab_dof_names:
+  - FR_hip_joint
+  - FR_thigh_joint
+  - FR_calf_joint
+  - FL_hip_joint
+  - FL_thigh_joint
+  - FL_calf_joint
+  - RR_hip_joint
+  - RR_thigh_joint
+  - RR_calf_joint
+  - RL_hip_joint
+  - RL_thigh_joint
+  - RL_calf_joint
+
+# Key body names for extracting positions
+# Must match the names in the lab robot model
+# Order should align with KEY_BODY_NAMES in atdog2_amp_env_cfg.py
+lab_key_body_names:
+  - FR_calf
+  - FL_calf
+  - RR_calf
+  - RL_calf
